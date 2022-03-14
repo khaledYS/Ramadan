@@ -1,14 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
 *, *::after, *::before{
   margin: 0;
   padding: 0;
   box-sizing: 0;
 }
 html{
-  
+  scroll-behavior: smooth;
 }
-body {
-  
+/* body {
+
+} */
+
+#root{
+  height: 100%;
+  width: 100vw;
+}
+.snap-container{
+  scroll-snap-points-y: repeat(100vh);
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+.snap{
+  scroll-snap-align: start;
+}
+
+.ar{
+  font-family: 'Tajawal', sans-serif;
+}
+.en{
+  font-family: 'Ubuntu', sans-serif;
 }
