@@ -46,7 +46,7 @@ function SectionFour(props) {
                         <img
                          src={LittleKidPrays} 
                          alt="LittleKidPrays" 
-                         className=" w-full block lrr:max-h-[40vh] max-w-[40vw] lrr:max-w-[80vw] " 
+                         className=" w-full block  max-w-[40vw] lrr:max-w-[80vw] lrr:min-h-min-[170px]" 
                          style={{clipPath:"polygon(92% 12%, 99% 83%, 3% 82%, 13% 20%)"}} 
                         />
                     </MotionFadeInLeft>

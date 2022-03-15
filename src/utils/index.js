@@ -25,7 +25,7 @@ export function filterObject(obj, removes, callback=()=>{}) {
     return newOb;
 }
 
-export function msToTime(duration) {
+export function msToTime(duration, options = {returnZeroIfNegative:true}) {
     var milliseconds = Math.floor((duration % 1000) / 100),
       seconds = Math.floor((duration / 1000) % 60),
       minutes = Math.floor((duration / (1000 * 60)) % 60),
@@ -39,12 +39,24 @@ export function msToTime(duration) {
     
     let time = days + "days - " + hours + "hours - " + minutes + "minutes - " + seconds + "." + milliseconds + "seconds";
     
-    return {
-        days,
-        hours,
-        minutes,
-        seconds
+    if(duration <= 0 && options?.returnZeroIfNegative){
+        return {
+            days : 0,
+            hours : 0,
+            minutes : 0,
+            seconds : 0,
+            duration : 0
+        }
+    }else{
+        return {
+            days,
+            hours,
+            minutes,
+            seconds,
+            duration
+        }
     }
+
 
   
   }

@@ -2,9 +2,6 @@ import ReactWOW from "react-wow";
 import div from "../../components/sectionSnap/SectionSnap";
 import useLang from "../../hooks/useLang";
 import { Component, useEffect } from "react";
-import "animate.css"
-import TrackVisibility from 'react-on-screen';
-import ScrollReveal from "../../services/ScrollReveal";
 import { motion } from "framer-motion";
 import MotionFadeInUp from "../../components/motionAnimatedComponents/fadeInUp/fadeInUp";
 import MotionFadeInLeft from "../../components/motionAnimatedComponents/fadeInLeft/FadeInLeft";
@@ -24,15 +21,15 @@ function Ramadan() {
             {/* Head Section */}
             <HeadSection lang={lang} setLang={setLang} className=""/>
             {/* section 1 */}
-            <SectionOne lang={lang} setLang={setLang} className="lrr:px-2 lrr:min-h-full min-h-[80vh]" />
+            <SectionOne lang={lang} setLang={setLang} className="lrr:px-2 lrr:min-h-full min-h-[65vh]" />
             {/* section 2 */}
-            <SectionTwo lang={lang} setLang={setLang} className="lrr:px-2 lrr:min-h-full min-h-[80vh]" />
+            <SectionTwo lang={lang} setLang={setLang} className="lrr:px-2 lrr:min-h-full min-h-[65vh]" />
             {/* section 3 */}
-            <SectionThree lang={lang} setLang={setLang} className="lrr:px-2 lrr:min-h-full min-h-[80vh]" />
+            <SectionThree lang={lang} setLang={setLang} className="lrr:px-2 lrr:min-h-full min-h-[65vh]" />
             {/* section 4 */}
-            <SectionFour lang={lang} setLang={setLang} className="lrr:px-2 lrr:min-h-full min-h-[80vh]" />
+            <SectionFour lang={lang} setLang={setLang} className="lrr:px-2 lrr:min-h-full min-h-[65vh]" />
             {/* section 5 */}
-            <SectionFive lang={lang} setLang={setLang} className="lrr:px-2 lrr:min-h-full min-h-[80vh]" />
+            <SectionFive lang={lang} setLang={setLang} className="lrr:px-2 lrr:min-h-full min-h-[0vh]" />
 
         </div>
     );

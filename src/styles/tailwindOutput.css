@@ -481,13 +481,41 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.25rem;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .my-10 {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
 }
 
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .block {
@@ -514,28 +542,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   min-height: 100%;
 }
 
+.min-h-\[65vh\] {
+  min-height: 65vh;
+}
+
+.min-h-\[0vh\] {
+  min-height: 0vh;
+}
+
 .min-h-\[30vw\] {
   min-height: 30vw;
-}
-
-.min-h-\[60vh\] {
-  min-height: 60vh;
-}
-
-.min-h-\[80vh\] {
-  min-height: 80vh;
 }
 
 .w-full {
   width: 100%;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
 .w-\[50vw\] {
   width: 50vw;
+}
+
+.w-1\/2 {
+  width: 50%;
 }
 
 .min-w-\[300px\] {
@@ -550,20 +578,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 50%;
 }
 
-.max-w-\[25vw\] {
-  max-width: 25vw;
-}
-
-.max-w-\[30vw\] {
-  max-width: 30vw;
-}
-
 .max-w-\[50vw\] {
   max-width: 50vw;
 }
 
 .max-w-\[40vw\] {
   max-width: 40vw;
+}
+
+.max-w-\[25vw\] {
+  max-width: 25vw;
+}
+
+.max-w-\[30vw\] {
+  max-width: 30vw;
 }
 
 .cursor-pointer {
@@ -602,6 +630,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 0.375rem;
 }
 
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
 .rounded-2xl {
   border-radius: 1rem;
 }
@@ -616,6 +648,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(54 59 65 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#7f9a88\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(127 154 136 / var(--tw-bg-opacity));
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.bg-\[\#397367\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(57 115 103 / var(--tw-bg-opacity));
+}
+
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -626,9 +672,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .text-center {
@@ -654,6 +715,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 15vw;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -667,6 +733,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-\[\#eeeeee\] {
   --tw-text-opacity: 1;
   color: rgb(238 238 238 / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .filter {
@@ -720,6 +791,43 @@ html{
   font-family: 'Ubuntu', sans-serif;
 }
 
+.TimeColon{
+  position: relative;
+  padding-right: 20px;
+}
+
+.TimeColon::after{
+  content: ":";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 2.5rem;
+  color: black;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  background-color: transparent;
+}
+
+.NICD{
+  border-radius: 10px;
+  padding: 3px 3px;
+  box-shadow: 0 0 0 0 ;
+}
+
+.ramadanIcon{
+  transform: translateX(15px);
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  transition: .25s ease-out all;
+  box-shadow: 
+    -15px 15px 0 5px #ffee00 , 
+    -25px 25px 20px 0px #ffee00,
+    0px 0px 0 0 #ffee00
+  ;
+}
+
 .hover\:bg-\[\#4A525A\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(74 82 90 / var(--tw-bg-opacity));
@@ -758,8 +866,8 @@ html{
     max-height: 300px;
   }
 
-  .lrr\:min-h-\[90vh\] {
-    min-height: 90vh;
+  .lrr\:min-h-full {
+    min-height: 100%;
   }
 
   .lrr\:min-h-\[70\%\] {
@@ -768,10 +876,6 @@ html{
 
   .lrr\:min-h-\[40vh\] {
     min-height: 40vh;
-  }
-
-  .lrr\:min-h-full {
-    min-height: 100%;
   }
 
   .lrr\:w-full {
@@ -786,12 +890,12 @@ html{
     max-width: none;
   }
 
-  .lrr\:max-w-\[340px\] {
-    max-width: 340px;
-  }
-
   .lrr\:max-w-\[80vw\] {
     max-width: 80vw;
+  }
+
+  .lrr\:max-w-\[340px\] {
+    max-width: 340px;
   }
 
   .lrr\:flex-col {
