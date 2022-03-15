@@ -490,10 +490,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1rem;
 }
 
-.mb-8 {
-  margin-bottom: 2rem;
-}
-
 .block {
   display: block;
 }
@@ -514,18 +510,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100%;
 }
 
-.max-h-\[40vh\] {
-  max-height: 40vh;
-}
-
-.max-h-\[50vh\] {
-  max-height: 50vh;
-}
-
-.max-h-\[60vh\] {
-  max-height: 60vh;
-}
-
 .min-h-full {
   min-height: 100%;
 }
@@ -534,12 +518,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   min-height: 30vw;
 }
 
+.min-h-\[60vh\] {
+  min-height: 60vh;
+}
+
+.min-h-\[80vh\] {
+  min-height: 80vh;
+}
+
 .w-full {
   width: 100%;
 }
 
 .w-1\/2 {
   width: 50%;
+}
+
+.w-\[50vw\] {
+  width: 50vw;
 }
 
 .min-w-\[300px\] {
@@ -552,6 +548,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-\[50\%\] {
   max-width: 50%;
+}
+
+.max-w-\[25vw\] {
+  max-width: 25vw;
+}
+
+.max-w-\[30vw\] {
+  max-width: 30vw;
+}
+
+.max-w-\[50vw\] {
+  max-width: 50vw;
+}
+
+.max-w-\[40vw\] {
+  max-width: 40vw;
 }
 
 .cursor-pointer {
@@ -590,20 +602,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 0.375rem;
 }
 
-.rounded-lg {
-  border-radius: 0.5rem;
-}
-
-.rounded-xl {
-  border-radius: 0.75rem;
-}
-
-.rounded-3xl {
-  border-radius: 1.5rem;
-}
-
-.rounded-full {
-  border-radius: 9999px;
+.rounded-2xl {
+  border-radius: 1rem;
 }
 
 .bg-\[\#07070A\] {
@@ -626,23 +626,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1rem;
 }
 
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-}
-
-.pb-12 {
-  padding-bottom: 3rem;
 }
 
 .text-center {
@@ -740,12 +726,12 @@ html{
 }
 
 @media (max-width: 1150px) {
-  .lrr\:mb-10 {
-    margin-bottom: 2.5rem;
+  .lrr\:mb-6 {
+    margin-bottom: 1.5rem;
   }
 
-  .lrr\:h-\[70\%\] {
-    height: 70%;
+  .lrr\:mb-8 {
+    margin-bottom: 2rem;
   }
 
   .lrr\:h-auto {
@@ -756,20 +742,56 @@ html{
     height: 50%;
   }
 
+  .lrr\:h-full {
+    height: 100%;
+  }
+
   .lrr\:max-h-\[40vh\] {
     max-height: 40vh;
+  }
+
+  .lrr\:max-h-\[50vh\] {
+    max-height: 50vh;
+  }
+
+  .lrr\:max-h-\[300px\] {
+    max-height: 300px;
+  }
+
+  .lrr\:min-h-\[90vh\] {
+    min-height: 90vh;
   }
 
   .lrr\:min-h-\[70\%\] {
     min-height: 70%;
   }
 
+  .lrr\:min-h-\[40vh\] {
+    min-height: 40vh;
+  }
+
+  .lrr\:min-h-full {
+    min-height: 100%;
+  }
+
   .lrr\:w-full {
     width: 100%;
   }
 
+  .lrr\:w-auto {
+    width: auto;
+  }
+
   .lrr\:max-w-none {
     max-width: none;
+  }
+
+  .lrr\:max-w-\[340px\] {
+    max-width: 340px;
+  }
+
+  .lrr\:max-w-\[80vw\] {
+    max-width: 80vw;
   }
 
   .lrr\:flex-col {
@@ -783,14 +805,14 @@ html{
   .lrr\:justify-center {
     justify-content: center;
   }
-}
 
-@media (max-width: 450px) {
-  .smm\:px-2 {
+  .lrr\:px-2 {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
+}
 
+@media (max-width: 450px) {
   .smm\:px-1 {
     padding-left: 0.25rem;
     padding-right: 0.25rem;

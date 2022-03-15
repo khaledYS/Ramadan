@@ -5,7 +5,7 @@ function HeadSection(props) {
     return (
         <div
          {...filterObject(props, ["className", "lang", "setLang"])}
-         className="reveal w-full h-full text-[15vw] grid place-items-center snap"
+         className={"reveal w-full h-full text-[15vw] grid place-items-center snap " + props.className || ""}
         >
             <MotionFadeInUp once>
                 <a 

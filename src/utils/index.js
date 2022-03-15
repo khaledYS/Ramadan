@@ -24,3 +24,27 @@ export function filterObject(obj, removes, callback=()=>{}) {
       })
     return newOb;
 }
+
+export function msToTime(duration) {
+    var milliseconds = Math.floor((duration % 1000) / 100),
+      seconds = Math.floor((duration / 1000) % 60),
+      minutes = Math.floor((duration / (1000 * 60)) % 60),
+      hours = Math.floor((duration / (1000 * 60 * 60)) % 24),
+      days = Math.floor((duration / (1000 * 60 * 60 * 24)) % 24);
+  
+    days = Number((days < 10) ? "0" + days : days)
+    hours = Number((hours < 10) ? "0" + hours : hours)
+    minutes = Number((minutes < 10) ? "0" + minutes : minutes)
+    seconds = Number((seconds < 10) ? "0" + seconds : seconds)
+    
+    let time = days + "days - " + hours + "hours - " + minutes + "minutes - " + seconds + "." + milliseconds + "seconds";
+    
+    return {
+        days,
+        hours,
+        minutes,
+        seconds
+    }
+
+  
+  }

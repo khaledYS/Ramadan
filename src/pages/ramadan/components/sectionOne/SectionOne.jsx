@@ -10,12 +10,13 @@ function SectionOne(props) {
             <div
              {...filterObject(props, ["className", "lang", "setLang"])}
              id="sec1"
-             className={"snap reveal grid place-items-center text-[#eeeeee] px-5 smm:px-1 text-2xl smm:text-xl text-center my-10 lrr:min-h-[70%] lrr:w-full min-h-[30vw]" + props?.className || " "} 
+             className={"snap reveal grid place-items-center text-[#eeeeee] px-5 smm:px-1 text-2xl smm:text-xl text-center my-10 lrr:w-full " + props?.className || " "} 
             >
                 <div
-                 className="flex items-center h-full w-full lrr:flex-col lrr:justify-center">
+                 className="flex items-center h-full w-full lrr:flex-col lrr:justify-center"
+                >
                     <div 
-                     className="h-full w-full lrr:h-auto flex justify-center items-center "
+                     className="h-full lrr:h-auto flex justify-center items-center lrr:w-full w-[50vw] "
                     >
                         <MotionFadeInLeft 
                          className=""

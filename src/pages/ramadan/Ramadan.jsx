@@ -14,6 +14,7 @@ import SectionOne from "./components/sectionOne/SectionOne";
 import SectionTwo from "./components/sectionTwo/SectionTwo";
 import SectionThree from "./components/sectionThree/SectionThree";
 import SectionFour from "./components/sectionFour/SectionFour";
+import SectionFive from "./components/sectionFive/SectionFive";
 function Ramadan() {
     const [lang, setLang] = useLang();
 
@@ -23,13 +24,15 @@ function Ramadan() {
             {/* Head Section */}
             <HeadSection lang={lang} setLang={setLang} className=""/>
             {/* section 1 */}
-            <SectionOne lang={lang} setLang={setLang} className="" />
+            <SectionOne lang={lang} setLang={setLang} className="lrr:px-2 lrr:min-h-full min-h-[80vh]" />
             {/* section 2 */}
-            <SectionTwo lang={lang} setLang={setLang} className="" />
+            <SectionTwo lang={lang} setLang={setLang} className="lrr:px-2 lrr:min-h-full min-h-[80vh]" />
             {/* section 3 */}
-            <SectionThree lang={lang} setLang={setLang} className="" />
+            <SectionThree lang={lang} setLang={setLang} className="lrr:px-2 lrr:min-h-full min-h-[80vh]" />
             {/* section 4 */}
-            <SectionFour lang={lang} setLang={setLang} className="" />
+            <SectionFour lang={lang} setLang={setLang} className="lrr:px-2 lrr:min-h-full min-h-[80vh]" />
+            {/* section 5 */}
+            <SectionFive lang={lang} setLang={setLang} className="lrr:px-2 lrr:min-h-full min-h-[80vh]" />
 
         </div>
     );
@@ -38,6 +41,7 @@ function Ramadan() {
 
 export default Ramadan;
 
+// 1648846800000
 /**
  *Ramadan is the ninth month of
 Islamic calendar,

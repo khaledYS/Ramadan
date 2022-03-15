@@ -8,13 +8,13 @@ function SectionTwo(props) {
         <div
         {...filterObject(props, ["className", "lang", "setLang"])}
          id="sec2"
-         className="snap reveal grid place-items-center text-[#eeeeee] px-5 text-2xl text-center lrr:min-h-[70%] lrr:w-full min-h-[30vw]" 
+         className={"snap reveal flex justify-center items-center text-[#eeeeee] px-5 smm:px-1 text-2xl smm:text-xl text-center my-10 lrr:min-h-[70%] lrr:w-full" + props?.className || " "} 
         >
             <div
              className="flex items-center h-full w-full lrr:flex-col-reverse lrr:justify-center"
             >
                 <div
-                 className="max-w-[50%] lrr:max-w-none "
+                 className="w-full lrr:max-w-none lrr:w-full max-w-[50vw]"
                 >
                     <MotionFadeInLeft
                      className=" px-8" 
@@ -37,16 +37,20 @@ function SectionTwo(props) {
                     </MotionFadeInLeft>
                 </div>
                 <div 
-                 className="h-full w-full lrr:h-auto flex justify-center items-center"
+                 className="flex items-center h-full w-full lrr:justify-center lrr:mb-8"
                 >
-                    <MotionFadeInRight once >
-                        <img 
-                         src={GivingMoney} 
-                         alt=""
-                         className=" w-full h-full mb-8 block lrr:max-h-[40vh] max-h-[50vh]" 
-                         style={{clipPath:"circle(50% at 50% 50%)"}} 
-                        />
-                    </MotionFadeInRight>
+                    <div
+                     className="h-full w-full lrr:h-auto flex justify-center items-center "
+                    >
+                        <MotionFadeInRight once >
+                            <img 
+                            src={GivingMoney} 
+                            alt=""
+                            className=" w-full h-full block lrr:max-h-[300px] max-w-[30vw] lrr:max-w-none" 
+                            style={{clipPath:"circle(50% at 50% 50%)"}} 
+                            />
+                        </MotionFadeInRight>
+                    </div>
                 </div>
             </div>
         </div>

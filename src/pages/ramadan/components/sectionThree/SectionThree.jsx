@@ -10,29 +10,29 @@ function SectionThree(props) {
         <div
          {...filterObject(props, ["className", "lang", "setLang"])}
          id="sec3"
-         className="snap reveal grid place-items-center text-[#eeeeee] px-5 text-2xl text-center my-10 lrr:min-h-[70%] lrr:w-full min-h-[30vw]" 
+         className={"snap reveal grid place-items-center text-[#eeeeee] px-5 text-2xl text-center my-10 lrr:min-h-[70%] lrr:w-full min-h-[30vw] " + props.className || " "}
         >
             <div 
              className="flex items-center h-full w-full lrr:flex-col lrr:justify-center"
             >
                 <div
-                 className="h-full w-1/2 lrr:h-auto flex justify-center items-center "
+                 className="h-full w-1/2 lrr:w-full lrr:h-auto lrr:min-h-[40vh] flex justify-center items-center "
                 >
                     <MotionFadeInLeft
-                     className="w-full h-full flex justify-center items-center"
+                     className="w-full lrr:h-full flex justify-center items-center lrr:max-w-[340px] lrr:mb-6"
                      once 
                     >
 
                         <img
                          src={QamerAldeenVector}
                          alt="LittleKidPrays" 
-                         className="  h-full block lrr:max-h-[40vh] max-h-[40vh] rounded-lg lrr:mb-10" 
+                         className=" w-full lrr:w-auto block lrr:max-h-[50vh] lrr:max-w-[80vw] max-w-[25vw] rounded-2xl" 
                         />
 
                     </MotionFadeInLeft>
                 </div>
                 <div 
-                 className="max-w-[50%] lrr:max-w-none "
+                 className="lrr:max-w-none lrr:w-full w-[50vw] "
                 >
                     <MotionFadeInRight
                      className=" px-8" 

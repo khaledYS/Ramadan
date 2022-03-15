@@ -8,13 +8,13 @@ function SectionFour(props) {
         <div
          {...filterObject(props, ["className", "lang", "setLang"])}
          id="sec4"
-         className="snap reveal grid place-items-center text-[#eeeeee] px-5 text-2xl text-center my-10 lrr:min-h-[70%] lrr:w-full min-h-[30vw]" 
+         className={"grid place-items-center text-[#eeeeee] px-5 text-2xl text-center my-10 lrr:w-full w-full" + props.className || " "} 
         >
             <div
-             className="flex items-center h-full w-full lrr:flex-col-reverse lrr:justify-center"
+             className="flex items-center h-full w-full lrr:flex-col-reverse lrr:justify-center "
             >
                 <div
-                 className="max-w-[50%] lrr:max-w-none "
+                 className="max-w-[50%] lrr:max-w-none w-full"
                 >
                     <MotionFadeInRight
                      className=" px-8" 
@@ -37,13 +37,16 @@ function SectionFour(props) {
                     </MotionFadeInRight>
                 </div>
                 <div 
-                 className="h-full w-full lrr:h-auto flex justify-center items-center "
+                 className="h-full w-full lrr:h-auto flex justify-center items-center max-w-[50vw] lrr:max-w-none "
                 >
-                    <MotionFadeInLeft once >
+                    <MotionFadeInLeft 
+                     once 
+                     className="w-full h-full grid place-items-center "
+                    >
                         <img
                          src={LittleKidPrays} 
                          alt="LittleKidPrays" 
-                         className=" w-full h-full block lrr:max-h-[40vh]" 
+                         className=" w-full block lrr:max-h-[40vh] max-w-[40vw] lrr:max-w-[80vw] " 
                          style={{clipPath:"polygon(92% 12%, 99% 83%, 3% 82%, 13% 20%)"}} 
                         />
                     </MotionFadeInLeft>
