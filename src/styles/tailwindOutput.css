@@ -828,11 +828,11 @@ html{
   bottom: 0;
   right: 0;
   font-size: 2.5rem;
-  color: black;
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
   background-color: transparent;
+  color: white;
 }
 
 .NICD{
