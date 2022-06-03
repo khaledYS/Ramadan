@@ -23,7 +23,7 @@ function Footer(props) {
                             كبير بواسطة عمار ياسر . 
                         </div>
                     }
-                    <a href="https://github.com/khaledYs" target="_blank" className="px-2 text-3xl block">
+                    <a href="https://github.com/khaledYs/ramadan" target="_blank" className="px-2 text-3xl block">
                         <GoMarkGithub className="hover:text-white transition-all" />
                     </a>
                 </div>
