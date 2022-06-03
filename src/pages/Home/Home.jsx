@@ -6,7 +6,8 @@ import Ramadan from "../ramadan/Ramadan";
 
 function Home() {
     const navigate = useNavigate();
-    const [lang, setLang] = useLang();
+    const {language} = useOutletContext();
+    const [lang, setLang] = language;
 
     return ( 
         <div className="w-full h-full grid place-items-center text-center text-lg">
@@ -20,6 +21,7 @@ function Home() {
                      title="العربيه"
                      onClick={()=>{
                         setLang("arabic")
+                        navigate("/ramadan")
                      }}
                      className=""
                      >
@@ -29,6 +31,7 @@ function Home() {
                      title="English"
                      onClick={()=>{
                         setLang("english")
+                        navigate("/ramadan")
                      }}
                      className=""
                      >

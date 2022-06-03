@@ -10,7 +10,7 @@ function SectionThree(props) {
         <div
          {...filterObject(props, ["className", "lang", "setLang"])}
          id="sec3"
-         className={"snap reveal grid place-items-center text-[#eeeeee] px-5 text-2xl text-center my-10 lrr:min-h-[70%] lrr:w-full min-h-[30vw] " + props.className || " "}
+         className={"snap reveal grid place-items-center text-[#eeeeee] px-5 text-2xl text-center my-10 lrr:w-full min-h-[30vw] " + props.className || " "}
         >
             <div 
              className="flex items-center h-full w-full lrr:flex-col lrr:justify-center"
@@ -26,7 +26,7 @@ function SectionThree(props) {
                         <img
                          src={QamerAldeenVector}
                          alt="LittleKidPrays" 
-                         className=" w-full lrr:w-auto block lrr:max-h-[50vh] lrr:max-w-[80vw] max-w-[25vw] rounded-2xl" 
+                         className=" w-full lrr:w-auto block lrr:max-h-[50vh] lrr:max-w-[250px] max-w-[25vw] rounded-2xl" 
                         />
 
                     </MotionFadeInLeft>

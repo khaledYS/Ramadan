@@ -1,20 +1,16 @@
-import ReactWOW from "react-wow";
-import div from "../../components/sectionSnap/SectionSnap";
-import useLang from "../../hooks/useLang";
-import { Component, useEffect } from "react";
-import { motion } from "framer-motion";
-import MotionFadeInUp from "../../components/motionAnimatedComponents/fadeInUp/fadeInUp";
-import MotionFadeInLeft from "../../components/motionAnimatedComponents/fadeInLeft/FadeInLeft";
-import MotionFadeInRight from "../../components/motionAnimatedComponents/fadeInRight/fadeInRight";
 import HeadSection from "./components/headSection/HeadSection";
 import SectionOne from "./components/sectionOne/SectionOne";
 import SectionTwo from "./components/sectionTwo/SectionTwo";
 import SectionThree from "./components/sectionThree/SectionThree";
 import SectionFour from "./components/sectionFour/SectionFour";
 import SectionFive from "./components/sectionFive/SectionFive";
+import SectionSex from "./components/sectionSex/SectionSex";
+import Footer from "./components/footer/Footer";
+import { useOutletContext } from "react-router";
+import { useEffect } from "react";
 function Ramadan() {
-    const [lang, setLang] = useLang();
-
+    const {language} = useOutletContext();
+    const [lang, setLang] = language;
     return (
         <div className={"Ramadan w-full h-full overflow-y-scroll overflow-x-hidden scroll-smooth"}>
             
@@ -30,6 +26,15 @@ function Ramadan() {
             <SectionFour lang={lang} setLang={setLang} className="lrr:px-2 lrr:min-h-full min-h-[65vh]" />
             {/* section 5 */}
             <SectionFive lang={lang} setLang={setLang} className="lrr:px-2 lrr:min-h-full min-h-[0vh]" />
+            {
+            /**
+             * section 6
+             * !note: section 6 is empty, so there is not any benefit to include it, section 6 has been commented so the developer knows that there is a extra section if you want to a section.
+             */
+            }
+            {/* <SectionSex lang={lang} setLang={setLang} className="lrr:px-2 lrr:min-h-full min-h-[0vh]" /> */}
+            {/* Footer */}
+            <Footer lang={lang} setLang={setLang} className="" />
 
         </div>
     );

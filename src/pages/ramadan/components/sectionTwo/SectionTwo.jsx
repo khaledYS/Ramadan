@@ -46,7 +46,7 @@ function SectionTwo(props) {
                             <img 
                             src={GivingMoney} 
                             alt=""
-                            className=" w-full h-full block lrr:max-h-[300px] max-w-[30vw] lrr:max-w-none" 
+                            className=" w-full h-full block lrr:max-h-[260px] max-w-[30vw] lrr:max-w-none" 
                             style={{clipPath:"circle(50% at 50% 50%)"}} 
                             />
                         </MotionFadeInRight>

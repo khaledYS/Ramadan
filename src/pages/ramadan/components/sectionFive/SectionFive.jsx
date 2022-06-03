@@ -13,10 +13,10 @@ function SectionFive(props) {
     const [timeLeftForRamadan, setTimeLeftForRamadan] = useState(msToTime(ramadanStartsAt - new Date().getTime()));
     const [isItRamadan, setIsItRamadan] = useState(false);
     const [afterTimer, setAfterTimer] = useState({
-        time: 6000,
+        time: 4000,
         isActive: false
     })
-    const {ref, inView} = useInView({threshold: .5, triggerOnce:true});
+    const {ref, inView} = useInView({threshold: .45, triggerOnce:true});
     const isMounted = useRef(false);
     const containerRef = useRef();
 

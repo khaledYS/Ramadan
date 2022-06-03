@@ -18,7 +18,9 @@ function App() {
 
   return (
       <div className="App text-white bg-[#07070A] w-full h-full snap-container">
-        <Outlet context={[lang, setLang]} />
+        <Outlet context={{
+          language: [lang, setLang]
+        }} />
       </div>
   )
 }

@@ -13,6 +13,7 @@ ReactDOM.render(
       <Route path="/" element={<App />}>
         <Route index element={<RootHome />}></Route>
         <Route path="ramadan" element={<Ramadan />}></Route>
+        <Route path="language" element={<RootHome />}></Route>
       </Route>
 
       {/* error page if the page is not found (optional) */}
