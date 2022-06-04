@@ -1,6 +1,5 @@
 import NICD from "../numberInCountDown/NumberInCountDown";
 import {v4 as uuidv4} from "uuid"
-import ColonSymbol from "../colonSymbol/ColonSymbol";
 
 function TimeBox(props) {
     return (
