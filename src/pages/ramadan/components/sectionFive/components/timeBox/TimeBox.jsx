@@ -1,5 +1,5 @@
 import NICD from "../numberInCountDown/NumberInCountDown";
-import {v4 as uuidv4} from "uuid"
+import {v1 as uuidv1} from "uuid"
 
 function TimeBox(props) {
     return (
@@ -16,7 +16,7 @@ function TimeBox(props) {
                         {props.num.toString().split("").map(num=>
                             <NICD
                             num={num} 
-                            key={uuidv4()}
+                            key={uuidv1()}
                             />
                         )}
                     </div>
